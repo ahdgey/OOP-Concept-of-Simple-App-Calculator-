@@ -20,7 +20,7 @@ class Calculator:
     def run(self):
         try:
             #Let the user pick among the four math operations
-            math_operation = input("Hi my friend! Kindly pick one math opeartion among these four (+, -, *, /)")
+            math_operation = input("Hi my friend! Kindly pick one math opeartion among these four (+, -, *, /): ")
 
             #Let the user type in two numbers
             num1 = float(input("Kindly type in the first number you like: "))
@@ -65,9 +65,13 @@ class Calculator:
                 raise ValueError("The option you choose is not valid.")
    
         #Manage exceptions and apply the run method continuously
-        except (ValueError, ZeroDivisionError) as e:
+        except (ValueError) as e:
             print("Exception: ", e)
             self.run()
 
-Calculator()
+        except (ZeroDivisionError) as e:
+            print("Exception: ")
+            self.run()
+
+calculator = Calculator()
 
