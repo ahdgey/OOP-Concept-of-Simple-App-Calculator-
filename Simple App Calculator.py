@@ -69,3 +69,5 @@ class Calculator:
             print("Exception: ", e)
             self.run()
 
+Calculator()
+
