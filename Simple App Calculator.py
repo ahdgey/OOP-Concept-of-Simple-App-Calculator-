@@ -47,8 +47,9 @@ class Calculator:
             else:
                 raise ValueError("The operation you pick is not in the option.")
 
-    #Execute the calculation
-    #Show the output of the program
+            #Show the output of the program
+            print("Output: ", output)
+            
     #Ask the user if they want to try again for another operation and numbers
     #If the user said yes, just repeat the whole process
     #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
