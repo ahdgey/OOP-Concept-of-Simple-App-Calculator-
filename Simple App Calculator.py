@@ -58,7 +58,10 @@ class Calculator:
                 Calculator()
 
             #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
-            if option.lower() == "no":
+            elif option.lower() == "no":
                 Calculator()
-                
-    #Manage exceptions and apply the run method continuously
+
+            else:
+                raise ValueError("The option you choose is not valid.")
+            
+            #Manage exceptions and apply the run method continuously
