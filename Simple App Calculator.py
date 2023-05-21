@@ -57,5 +57,8 @@ class Calculator:
             if option.lower() == "yes":
                 Calculator()
 
-    #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
+            #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
+            if option.lower() == "no":
+                Calculator()
+                
     #Manage exceptions and apply the run method continuously
