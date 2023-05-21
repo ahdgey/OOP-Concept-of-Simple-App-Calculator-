@@ -22,7 +22,10 @@ class Calculator:
             #Let the user pick among the four math operations
             math_operation = input("Hi my friend! Kindly pick one math opeartion among these four (+, -, *, /)")
 
-    #Let the user type in two numbers
+            #Let the user type in two numbers
+            num1 = float(input("Kindly type in the first number you like: "))
+            num2 = float(input("Kindly type in the second number you like: "))
+            
     #Using the math operation that the user pick, execute the calculation
     #Execute the calculation
     #Show the output of the program
