@@ -14,7 +14,14 @@ print("-" * 90)
 class Calculator:
 
     #Constructor
-    #Let the user pick among the four math operations
+    def __init__(self):
+        self.run()
+
+    def run(self):
+        try:
+            #Let the user pick among the four math operations
+            math_operation = input("Hi my friend! Kindly pick one math opeartion among these four (+, -, *, /)")
+
     #Let the user type in two numbers
     #Using the math operation that the user pick, execute the calculation
     #Execute the calculation
