@@ -55,13 +55,17 @@ class Calculator:
             
             #If the user said yes, just repeat the whole process
             if option.lower() == "yes":
-                Calculator()
+                self.run()
 
             #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
             elif option.lower() == "no":
-                Calculator()
+                print("Thank you for using this simple app calculator I made.")
 
             else:
                 raise ValueError("The option you choose is not valid.")
-            
-            #Manage exceptions and apply the run method continuously
+   
+        #Manage exceptions and apply the run method continuously
+        except (ValueError, ZeroDivisionError) as e:
+            print("Exception: ", e)
+            self.run()
+
