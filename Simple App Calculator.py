@@ -25,8 +25,13 @@ class Calculator:
             #Let the user type in two numbers
             num1 = float(input("Kindly type in the first number you like: "))
             num2 = float(input("Kindly type in the second number you like: "))
-            
-    #Using the math operation that the user pick, execute the calculation
+
+            #Using the math operation that the user pick, execute the calculation
+
+            #If +, add num1 and num2
+            #If -, subtract num1 and num2
+            #If *, multiply num1 and num2
+            #If /, divide num1 and num2
     #Execute the calculation
     #Show the output of the program
     #Ask the user if they want to try again for another operation and numbers
