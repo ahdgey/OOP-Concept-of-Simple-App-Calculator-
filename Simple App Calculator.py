@@ -49,8 +49,10 @@ class Calculator:
 
             #Show the output of the program
             print("Output: ", output)
+
+            #Ask the user if they want to try again for another operation and numbers
+            option = input("Hi my friend! Would you like to try another operation and number? (yes/no): ")
             
-    #Ask the user if they want to try again for another operation and numbers
     #If the user said yes, just repeat the whole process
     #If the user said no, print "Thank you for using this simple app calculator I made." and then end program
     #Manage exceptions and apply the run method continuously
