@@ -33,16 +33,19 @@ class Calculator:
                 output = num1 + num2
 
             #If -, subtract num1 and num2
-            if math_operation == "-":
+            elif math_operation == "-":
                 output = num1 - num2
 
             #If *, multiply num1 and num2
-            if math_operation == "*":
+            elif math_operation == "*":
                 output = num1 * num2
 
             #If /, divide num1 and num2
-            if math_operation == "/":
+            elif math_operation == "/":
                 output = num1 / num2
+
+            else:
+                raise ValueError("The operation you pick is not in the option.")
 
     #Execute the calculation
     #Show the output of the program
