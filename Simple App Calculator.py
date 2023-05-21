@@ -38,9 +38,12 @@ class Calculator:
 
             #If *, multiply num1 and num2
             if math_operation == "*":
-                output = num1 / num2
-                
+                output = num1 * num2
+
             #If /, divide num1 and num2
+            if math_operation == "/":
+                output = num1 / num2
+
     #Execute the calculation
     #Show the output of the program
     #Ask the user if they want to try again for another operation and numbers
