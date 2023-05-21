@@ -11,6 +11,9 @@ print("\033[1;32m\nHello! Your Programmers name is Alexza Jean.")
 print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
+#Import file Test Calculator.py
+from Test_Calculator import Calculator
+
 class Calculator:
 
     #Constructor
@@ -72,6 +75,6 @@ class Calculator:
         except (ZeroDivisionError) as e:
             print("Exception: ")
             self.run()
-
-calculator = Calculator()
+            
+Calculator()
 
