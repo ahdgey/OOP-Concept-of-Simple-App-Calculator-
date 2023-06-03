@@ -27,7 +27,7 @@ def __init__(self):
 def run(self):
     try:
         #Let the user pick among the four math operations
-        math_operation = input("\033[0;31m\nHi my friend! Kindly pick one math opeartion among these four (+, -, *, /): \033[1;37m")
+        math_operation = ui.input("\033[0;31m\nHi my friend! Kindly pick one math opeartion among these four (+, -, *, /): \033[1;37m")
 
         #Let the user type in two numbers
         num1 = ui.float(input("\033[0;33m\nKindly type in the first number you like: \033[1;37m"))
@@ -35,19 +35,27 @@ def run(self):
 
         #Using the math operation that the user pick, execute the calculation
 
-        #If +, add num1 and num2
+        #If +, add num1 and num2 and then get the modulus
         if math_operation == "+":
-            output = num1 + num2
+            CalculatorAlexza.add()
+            sum = calc.add(num1, num2)
+            fmodAdd = CalculatorAlexza.fmodAdd(sum)
+            CalculatorAlexza.add()
+            output1 = str(sum)
+            output2 = fmodAdd
 
-        #If -, subtract num1 and num2
+        #If -, subtract num1 and num2 and then get the modulus
         elif math_operation == "-":
-            output = num1 - num2
+            diff = calc.subtract(num1, num2)
+            fmodSub = CalculatorAlexza.fmodSub(diff)
+            output1 = str(diff)
+            output2 = fmodSub
 
-        #If *, multiply num1 and num2
+        #If *, multiply num1 and num2 and then get the modulus
         elif math_operation == "*":
             output = num1 * num2
 
-        #If /, divide num1 and num2
+        #If /, divide num1 and num2 and then get the modulus
         elif math_operation == "/":
             output = num1 / num2
 
