@@ -50,6 +50,6 @@ while True:
 
     if not ui.retry():
         
-    #Show the output of the program
+        #Show the output of the program
         print("\033[0;35m\nOutput 1: \033[1;37m", output1)
         print("\033[0;35m\nOutput 2: \033[1;37m", output2)
