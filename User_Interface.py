@@ -11,9 +11,6 @@ print("\033[1;32m\nHello! Your Programmers name is Alexza Jean.")
 print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
-#Import file Test Calculator.py
-from Test_Calculator import Calculator
-
 class User_Interface:
 
     #Constructor

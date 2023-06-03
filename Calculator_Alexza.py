@@ -1,4 +1,8 @@
 from Test_Calculator import Calculator
+from math import fmod
 
 class CalculatorAlexza(Calculator):
-    pass
+    def add(self):
+        print("Override")
+
+    
