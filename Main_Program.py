@@ -16,6 +16,9 @@ from User_Interface import UserInterface
 from Test_Calculator import Calculator
 from Calculator_Alexza import CalculatorAlexza
 
+ui = UserInterface()
+calc = Calculator()
+alexza = CalculatorAlexza()
 
 #Constructor
 def __init__(self):
