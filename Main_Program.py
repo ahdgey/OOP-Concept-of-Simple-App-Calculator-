@@ -53,17 +53,24 @@ def run(self):
 
         #If *, multiply num1 and num2 and then get the modulus
         elif math_operation == "*":
-            output = num1 * num2
+            product = calc.multiply(num1, num2)
+            fmodMult = CalculatorAlexza.fmodMult(product)
+            output1 = str(product)
+            output2 = fmodMult
 
         #If /, divide num1 and num2 and then get the modulus
         elif math_operation == "/":
-            output = num1 / num2
+            qoutient = calc.divide(num1, num2)
+            fmodDiv = CalculatorAlexza.fmodDiv(qoutient)
+            output1 = str(qoutient)
+            output2 = fmodDiv
 
         else:
             raise ValueError("The operation you pick is not in the option.")
 
         #Show the output of the program
-        print("\033[0;35m\nOutput: \033[1;37m", output)
+        print("\033[0;35m\nOutput 1: \033[1;37m", output1)
+        print("\033[0;35m\nOutput 2: \033[1;37m", output2)
 
         print("\033[0;35m~" * 90)
         #Ask the user if they want to try again for another operation and numbers
