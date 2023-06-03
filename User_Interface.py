@@ -14,7 +14,7 @@ print("-" * 90)
 #Import file Test Calculator.py
 from Test_Calculator import Calculator
 
-class Calculator:
+class User_Interface:
 
     #Constructor
     def __init__(self):
@@ -77,5 +77,5 @@ class Calculator:
             print("Exception: ")
             self.run()
             
-Calculator()
+User_Interface()
 

@@ -12,11 +12,11 @@ print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
 #Import file Test Calculator.py
-from User_Interface import UserInterface
+from User_Interface import User_Interface
 from Test_Calculator import Calculator
 from Calculator_Alexza import CalculatorAlexza
 
-ui = UserInterface()
+ui = User_Interface()
 calc = Calculator()
 alexza = CalculatorAlexza()
 
@@ -30,8 +30,8 @@ def run(self):
         math_operation = input("\033[0;31m\nHi my friend! Kindly pick one math opeartion among these four (+, -, *, /): \033[1;37m")
 
         #Let the user type in two numbers
-        num1 = float(input("\033[0;33m\nKindly type in the first number you like: \033[1;37m"))
-        num2 = float(input("\033[0;33m\nKindly type in the second number you like: \033[1;37m"))
+        num1 = ui.float(input("\033[0;33m\nKindly type in the first number you like: \033[1;37m"))
+        num2 = ui.float(input("\033[0;33m\nKindly type in the second number you like: \033[1;37m"))
 
         #Using the math operation that the user pick, execute the calculation
 
