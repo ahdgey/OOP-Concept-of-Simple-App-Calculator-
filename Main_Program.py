@@ -21,7 +21,7 @@ while True:
     #If +, add num1 and num2 and then get the modulus
     if math_operation == "+":
         alexza.add()
-        sum = calc.add(num1, num2)
+        sum = calc.add(num1 + num2)
         fmodAdd = alexza.fmodAdd(sum)
         alexza.add()
         output1 = str(sum)
@@ -29,21 +29,21 @@ while True:
 
     #If -, subtract num1 and num2 and then get the modulus
     elif math_operation == "-":
-        diff = calc.subtract(num1, num2)
+        diff = calc.subtract(num1 - num2)
         fmodSub = alexza.fmodSub(diff)
         output1 = str(diff)
         output2 = fmodSub
 
     #If *, multiply num1 and num2 and then get the modulus
     elif math_operation == "*":
-        product = calc.multiply(num1, num2)
+        product = calc.multiply(num1 * num2)
         fmodMult = alexza.fmodMult(product)
         output1 = str(product)
         output2 = fmodMult
 
     #If /, divide num1 and num2 and then get the modulus
     elif math_operation == "/":
-        qoutient = calc.divide(num1, num2)
+        qoutient = calc.divide(num1 / num2)
         fmodDiv = alexza.fmodDiv(qoutient)
         output1 = str(qoutient)
         output2 = fmodDiv
